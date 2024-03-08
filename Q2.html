@@ -1,36 +1,81 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="Task_2css.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <title>Task 2</title>
 
-        <style>
-            .NavBar{
-                background-color: gainsboro;
-                font-size: 12px;
-            }
-        </style>
-
     </head>
+    
 
     <body>
         <header>
+
             <div class="row NavBar">
                 <div class="col-md-1 LaravelBlog">Laravel Blog</div>
                 <div class="col-md-1 Home" style="width: fit-content;">Home</div>
                 <div class="col-md-1 About" style="width: fit-content;">About</div>
                 <div class="col-md-1 Contact" style="width: fit-content;">Contact</div>
                 <div class="col-md-7 Space"></div>
-                <div class="col-md-1 MyAccount">
+                <div class="col-md-1 MyAccount" style="position: absolute; right: 0; margin-right: 30px;">
                     MyAccount
                 </div>
             </div>
-        </header>
-    </body>
 
+        </header>
+
+        <div id="WelcomeSection">
+            <div class="WelcomeContent">
+                <p style="font-size: 3.5rem;">Welcome to My Blog</p>
+                <p style="font-size: 16px;">Thank you so much for visiting. This is my test website, built with Laravel. Please read my latest posts.</p>
+                <input type="button" value="Popular Post" class="Button">
+            </div>
+        </div>
+
+        <section id="Content">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-6 PostContent">
+                    <div class="ActualPost">
+                        <h3>Post Title</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates cum voluptatibus repellendus temporibus, 
+                        tempore officia libero ab esse perferendis earum quam blanditiis doloremque, sequi pariatur, accusamus ipsum 
+                        maiores impedit quasi distinctio animi minima harum odit? Delectus, deserunt. Natus, maxime optio?
+                        </p>
+                        <input type="button" value="Read more" class="Button">
+                        <hr>
+                    </div>
+                    <div class="ActualPost">
+                        <h3>Post2 Title</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates cum voluptatibus repellendus temporibus, 
+                        tempore officia libero ab esse perferendis earum quam blanditiis doloremque, sequi pariatur, accusamus ipsum 
+                        maiores impedit quasi distinctio animi minima harum odit? Delectus, deserunt. Natus, maxime optio?
+                        </p>
+                        <input type="button" value="Read more" class="Button">
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="col-md-1"></div>
+
+                <div class="col-md-3 SideBar">
+                    <h3>SideBar</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fugit fuga magnam vitae dolor! 
+                        Assumenda unde illum nesciunt facere est nostrum minima. Cumque soluta possimus delectus et, molestiae itaque 
+                        maiores.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates cum voluptatibus repellendus temporibus, 
+                        tempore officia libero ab esse perferendis earum quam blanditiis doloremque, sequi pariatur, accusamus ipsum 
+                        maiores impedit quasi distinctio animi minima harum odit? Delectus, deserunt. Natus, maxime optio?
+                    </p>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </section>
+
+    </body>
 
 
 </html>
